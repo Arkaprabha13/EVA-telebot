@@ -43,7 +43,7 @@ def save_to_docx(question, answer, response_time):
 
 @dp.message_handler(commands=['start'])
 async def welcome(message: types.Message):
-    await message.reply("Welcome to this bot!\nPowered by aiogram.")
+    await message.reply("Hey myself EVA .")
 
 @dp.message_handler(commands=['clear'])
 async def clear(message: types.Message):
