@@ -69,7 +69,7 @@ async def all_time(message: types.Message):
         await message.answer("typing...")
         start_time = time.time()
 
-        full_query = f"User's name = {personal_prompt} + {user_query}"
+        full_query = f" {personal_prompt}  {user_query}"
         query_msg = llama3.invoke(full_query)
         # print("Before chatbot.chat call")
         bot_response = query_msg.content
